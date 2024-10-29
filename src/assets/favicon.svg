@@ -1,0 +1,44 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#FFFFFF;}
+	.st2{font-family:'ArtifaktElement-BoldItalic';}
+	.st3{font-size:120px;}
+	.st4{fill:none;stroke:#E2E735;stroke-width:30;stroke-miterlimit:10;}
+	.st5{fill:#E2E735;}
+	.st6{display:inline;}
+	.st7{font-family:'Swiss721BT-BoldExtended';}
+	.st8{fill:none;stroke:#E2E735;stroke-width:20;stroke-miterlimit:10;}
+	.st9{font-family:'CommercialScriptBT-Regular';}
+	.st10{font-size:28px;}
+	.st11{fill:#FFFFFF;}
+</style>
+<g id="Layer_8" class="st0">
+	<text transform="matrix(1 0 0 1 21.0272 292.7175)" class="st1 st2 st3">/viatora</text>
+</g>
+<g id="Layer_3">
+	<polyline class="st4" points="393.73,101.64 394.04,101 95.37,101 	"/>
+	<g>
+		
+			<rect x="148.64" y="246.4" transform="matrix(0.4472 -0.8944 0.8944 0.4472 -51.5072 429.4586)" class="st5" width="346.06" height="20"/>
+	</g>
+	<g>
+		<polyline points="261.34,399.42 105,86 71.1,86 244.71,433.22 		"/>
+	</g>
+</g>
+<g id="Layer_9" class="st0">
+	<text transform="matrix(1 0 0 1 -76.1975 288.7175)" class="st6 st7 st3">VIA TORA</text>
+</g>
+<g id="Layer_7">
+	<text transform="matrix(1 0 0 1 270.1912 288.7175)" class="st7 st3">O</text>
+</g>
+<g id="Layer_5">
+	<line class="st8" x1="318.54" y1="262.67" x2="399.05" y2="101.64"/>
+</g>
+<g id="Layer_6">
+	<text transform="matrix(0.4378 -0.8991 0.8991 0.4378 326.6917 265.2759)" class="st9 st10">del</text>
+	<text transform="matrix(0.4509 0.8925 -0.8925 0.4509 145.7488 217.9402)" class="st11 st9 st10">nabla</text>
+	<text transform="matrix(1 0 0 1 230.0803 109.0954)" class="st9 st10">curl</text>
+</g>
+</svg>

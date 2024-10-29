@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden w-full h-screen">
       <img
-        className="-z-50 absolute inset-0 object-cover w-full h-full"
+        className="-z-50 absolute inset-0 object-cover w-full h-full object-right"
         src={backgroundImg}
         alt=""
       />

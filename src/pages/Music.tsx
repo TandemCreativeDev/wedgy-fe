@@ -1,4 +1,5 @@
 import Header from "../components/Header/Header";
+import BandcampPlayer from "../components/BandcampPlayer/BandcampPlayer";
 
 export default function Music() {
   return (

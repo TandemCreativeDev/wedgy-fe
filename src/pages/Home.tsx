@@ -2,7 +2,7 @@ import backgroundImg from "../assets/images/background.jpg";
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden w-full h-screen">
+    <main className="relative overflow-hidden w-full h-screen -z-30">
       <img
         className="-z-50 absolute inset-0 object-cover w-full h-full object-right"
         src={backgroundImg}

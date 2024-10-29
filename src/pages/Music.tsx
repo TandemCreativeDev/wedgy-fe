@@ -6,7 +6,7 @@ export default function Music() {
   return (
     <>
       <Header />
-      <h1 className="m-auto w-1/2 font-lexend text-white text-7xl text-center tracking-widest">
+      <h1 className="m-auto w-1/4 font-lexend text-white text-7xl text-center tracking-widest">
         MUSIC
       </h1>
       <h2 className="m-auto w-1/2 font-lexend text-white text-4xl text-center tracking-widest mt-10 mb-10">
@@ -19,7 +19,7 @@ export default function Music() {
           }
         })}
       </div>
-      <h2 className="m-auto w-1/2 font-lexend text-white text-4xl text-center tracking-widest mt-10 mb-10">
+      <h2 className="m-auto w-1/2 font-lexend text-white text-4xl text-center items-center tracking-widest mt-10 mb-10">
         BUY THE ALBUM
       </h2>
       <div className="flex justify-center flex-wrap gap-24 w-11/12 m-auto mb-16">

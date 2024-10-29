@@ -1,11 +1,9 @@
-import Navbar from './Navbar'
+import Navbar from "./Navbar/Navbar";
 
 export default function Header() {
-    return (
-        <header>
-            <img src="../../assets/favicon.svg" alt="Website logo" />
-            <h1>Website Title</h1>
-            <Navbar />
-        </header>
-    );
-};
+  return (
+    <header>
+      <Navbar />
+    </header>
+  );
+}

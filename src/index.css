@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalnia&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.imgLeft {
+  direction: rtl; /* This will affect child elements */
+}

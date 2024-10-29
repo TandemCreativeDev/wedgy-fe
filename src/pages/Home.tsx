@@ -1,8 +1,16 @@
+import backgroundImg from "../assets/images/background.jpg";
+
 export default function Home() {
-    return (
-      <main>
-        <h2>Home</h2>
-        <p>This is the Home section.</p>
-      </main>
-    );
-};
+  return (
+    <main className="relative overflow-hidden w-full h-screen">
+      <img
+        className="-z-50 absolute inset-0 object-cover w-full h-full object-right"
+        src={backgroundImg}
+        alt=""
+      />
+      <h1 className="hidden absolute md:block top-8 left-1/2 transform -translate-x-1/2 text-white text-5xl font-kalnia">
+        Wedgy.
+      </h1>
+    </main>
+  );
+}

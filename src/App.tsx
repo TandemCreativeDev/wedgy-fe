@@ -18,6 +18,7 @@ function App() {
           <Route path="/music" element={<Music />} />
         </Routes>
       </Router>
+      <div className="mb-32"></div>
       <Footer />
     </>
   );

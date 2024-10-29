@@ -7,7 +7,7 @@ interface SongProps {
 export default function BandcampPlayer({ song }: { song: SongProps }) {
   return (
     <iframe
-      style={{ border: 0, width: "300px", height: "442px" }} // Use an object here
+      style={{ border: 0, width: "350px", height: "442px" }} // Use an object here
       src={song.src}
       seamless
     >

@@ -5,6 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.imgLeft {
-  direction: rtl; /* This will affect child elements */
+body {
+  @apply bg-[#121212];
 }

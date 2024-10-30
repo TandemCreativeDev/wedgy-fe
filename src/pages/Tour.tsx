@@ -1,7 +1,15 @@
 import { useEffect, useState } from "react";
 
+// Define a type for your data structure
+type TourDate = {
+  venue: string;
+  location: string;
+  event_date: string;
+  ticket_link: string;
+};
+
 export default function Tour() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<TourDate[]>([]); // Use the type here
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,11 +25,14 @@ export default function Tour() {
 
         const parsedData = rows.slice(1).map((row) => {
           const values = row.split(",");
-          return headers.reduce((object, header, index) => {
-            object[header.trim()] = values[index]?.trim();
+          const tourDate: TourDate = headers.reduce((object, header, index) => {
+            const key = header.trim() as keyof TourDate; // Use keyof for type-safe property access
+            object[key] = values[index]?.trim() || "";
             return object;
-          }, {});
+          }, {} as TourDate); // Specify the initial object type
+          return tourDate;
         });
+
         console.log(parsedData);
         setData(parsedData);
       } catch (error) {
@@ -38,24 +49,25 @@ export default function Tour() {
         TOUR
       </h2>
       <ul className="mt-10">
-        {data.map((tourDate) => {
-          return (
-            <div className="mb-14 m-auto w-1/2 flex flex-col justify-center items-center text-center">
-              <li>{tourDate.venue}</li>
-              <li>{tourDate.location}</li>
-              <li>{tourDate.event_date}</li>
-              <li className="mt-6">
-                <a
-                  className="bg-white text-black text-center p-2 "
-                  target="_blank"
-                  href={tourDate.ticket_link}
-                >
-                  Buy Tickets
-                </a>
-              </li>
-            </div>
-          );
-        })}
+        {data.map((tourDate) => (
+          <div
+            key={tourDate.venue + tourDate.event_date} // Add a unique key
+            className="mb-14 m-auto w-1/2 flex flex-col justify-center items-center text-center"
+          >
+            <li>{tourDate.venue}</li>
+            <li>{tourDate.location}</li>
+            <li>{tourDate.event_date}</li>
+            <li className="mt-6">
+              <a
+                className="bg-white text-black text-center p-2 "
+                target="_blank"
+                href={tourDate.ticket_link}
+              >
+                Buy Tickets
+              </a>
+            </li>
+          </div>
+        ))}
       </ul>
     </>
   );

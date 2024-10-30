@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Music from "./pages/Music";
+import Merch from "./pages/Merch";
 import Header from "./components/Header/Header";
 import "./App.css";
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/merch" element={<Merch />} />
         </Routes>
       </Router>
       <Footer />

@@ -1,11 +1,9 @@
-import Header from "../components/Header/Header";
 import BandcampPlayer from "../components/BandcampPlayer/BandcampPlayer";
 import bandCampData from "../assets/data/bandcamp.json";
 
 export default function Music() {
   return (
     <>
-      <Header />
       <h1 className="m-auto w-1/4 font-lexend text-white text-7xl text-center tracking-widest">
         MUSIC
       </h1>

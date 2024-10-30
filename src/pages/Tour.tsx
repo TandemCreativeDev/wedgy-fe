@@ -37,6 +37,18 @@ export default function Tour() {
       <h2 className=" font-lexend text-white text-5xl md:text-7xl text-center tracking-widest">
         TOUR
       </h2>
+      <ul className="mt-10">
+        {data.map((tourDate) => {
+          return (
+            <div className="mb-10 m-auto w-1/2">
+              <li>{tourDate.venue}</li>
+              <li>{tourDate.location}</li>
+              <li>{tourDate.event_date}</li>
+              <li>{tourDate.ticket_link}</li>
+            </div>
+          );
+        })}
+      </ul>
     </>
   );
 }

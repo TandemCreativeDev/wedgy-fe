@@ -3,13 +3,18 @@ import aboutImg from "../assets/images/about-img.jpg";
 export default function About() {
   return (
     <main>
+      <h1 className=" font-lexend text-white text-5xl md:text-7xl text-center tracking-widest">
+        about
+      </h1>
+      <h3 className="text-center text-xl md:text-3xl mt-10">
+        Wedgy are an Alt-Rock band, based in Leeds.
+      </h3>
       <img
         className="w-11/12 m-auto mt-10 md:max-w-3xl"
         src={aboutImg}
         alt=""
       />
-      <div className="flex flex-col gap-7 mt-10 max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-5xl  m-auto mb-10 md:text-xl md:leading-9">
-        <p>Wedgy are an Alt-Rock band, based in Leeds.</p>
+      <div className="flex flex-col gap-7 mt-10 max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-5xl  m-auto mb-10 md:text-xl md:leading-">
         <p>
           Rooted by fuzzy guitar tones, Wedgy weaves in synths and digital
           production techniques to define their sound. With clear nods to both

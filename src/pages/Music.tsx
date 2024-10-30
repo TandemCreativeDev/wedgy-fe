@@ -4,7 +4,7 @@ import bandCampData from "../assets/data/bandcamp.json";
 export default function Music() {
   return (
     <>
-      <h1 className=" font-lexend text-white text-7xl text-center tracking-widest">
+      <h1 className=" font-lexend text-white text-5xl md:text-7xl text-center tracking-widest">
         MUSIC
       </h1>
       <h2 className="m-auto w-1/2 font-lexend text-white text-4xl text-center tracking-widest mt-10 mb-10">

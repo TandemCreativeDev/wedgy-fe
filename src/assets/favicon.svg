@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#808080;}
-	.st1{font-family:'Kalnia-Regular';}
-	.st2{font-size:14px;}
+	.st0{fill:#00061B;}
+	.st1{fill:#F2F2F2;}
+	.st2{font-family:'Kalnia-Regular';}
+	.st3{font-size:14px;}
 </style>
-<text transform="matrix(1 0 0 1 -0.0993 13.6011)" class="st0 st1 st2">W</text>
+<g id="Layer_2">
+	<path class="st0" d="M12.99,16H3.01C1.35,16,0,14.65,0,12.99V3.01C0,1.35,1.35,0,3.01,0h9.98C14.65,0,16,1.35,16,3.01v9.98
+		C16,14.65,14.65,16,12.99,16z"/>
+</g>
+<g id="Layer_1">
+	<text transform="matrix(1 0 0 1 -0.0993 13.6011)" class="st1 st2 st3">W</text>
+</g>
 </svg>

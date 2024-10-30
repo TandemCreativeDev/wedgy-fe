@@ -1,6 +1,7 @@
 export default function HomeMenu() {
   const menuLinks = [
-    { linkAddress: "/", linkText: "TOUR" },
+    { linkAddress: "/tour", linkText: "TOUR" },
+    { linkAddress: "/about", linkText: "ABOUT" },
     { linkAddress: "/music", linkText: "MUSIC" },
     { linkAddress: "/merch", linkText: "MERCH" },
     { linkAddress: "/contact", linkText: "CONTACT" },
@@ -14,7 +15,7 @@ export default function HomeMenu() {
             <li key={index}>
               <a
                 href={link.linkAddress}
-                className="hover:text-gray-400 cursor-pointer"
+                className="hover:text-gray-400 cursor-pointer underline underline-offset-8 md:no-underline decoration-2 tracking-widest"
               >
                 {link.linkText}
               </a>

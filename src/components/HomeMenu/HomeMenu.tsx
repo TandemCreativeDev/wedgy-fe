@@ -15,7 +15,7 @@ export default function HomeMenu() {
             <li key={index}>
               <a
                 href={link.linkAddress}
-                className="hover:text-gray-400 cursor-pointer"
+                className="hover:text-gray-400 cursor-pointer underline underline-offset-8 md:no-underline decoration-2 tracking-widest"
               >
                 {link.linkText}
               </a>

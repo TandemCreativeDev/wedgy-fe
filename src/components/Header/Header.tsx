@@ -1,4 +1,4 @@
-// import Navbar from "./Navbar/Navbar";
+import MobileNav from "./Navbar/Navbar";
 
 export default function Header() {
   return (
@@ -9,6 +9,7 @@ export default function Header() {
       >
         <h1 className="hidden  md:block">Wedgy.</h1>
       </a>
+      <MobileNav />
     </header>
   );
 }

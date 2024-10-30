@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-screen bg-gray-400 flex justify-center items-center h-12">
+    <footer className="w-screen  bottom-0 bg-gray-900 flex justify-center items-center h-12 text-white z-50">
       <p>&copy; 2024 &nabla; Viatora Digital. All rights reserved.</p>
     </footer>
   );

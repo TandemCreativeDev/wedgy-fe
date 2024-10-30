@@ -1,6 +1,7 @@
 export default function HomeMenu() {
   const menuLinks = [
-    { linkAddress: "/", linkText: "TOUR" },
+    { linkAddress: "/tour", linkText: "TOUR" },
+    { linkAddress: "/about", linkText: "ABOUT" },
     { linkAddress: "/music", linkText: "MUSIC" },
     { linkAddress: "/merch", linkText: "MERCH" },
     { linkAddress: "/contact", linkText: "CONTACT" },

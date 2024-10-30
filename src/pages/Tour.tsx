@@ -40,11 +40,19 @@ export default function Tour() {
       <ul className="mt-10">
         {data.map((tourDate) => {
           return (
-            <div className="mb-10 m-auto w-1/2">
+            <div className="mb-14 m-auto w-1/2 flex flex-col justify-center items-center text-center">
               <li>{tourDate.venue}</li>
               <li>{tourDate.location}</li>
               <li>{tourDate.event_date}</li>
-              <li>{tourDate.ticket_link}</li>
+              <li className="mt-6">
+                <a
+                  className="bg-white text-black text-center p-2 "
+                  target="_blank"
+                  href={tourDate.ticket_link}
+                >
+                  Buy Tickets
+                </a>
+              </li>
             </div>
           );
         })}

@@ -21,10 +21,9 @@ export default function About() {
           post-punk and shoe-gaze, harsh tones meet ethereal synth and backing
           vocals lines. The tone accompanies the deep insight into internal
           challenges that are represented on face value through the narrative.
-          The
         </p>
         <p>
-          band developed inspiration in the juxtaposition of travel and
+          The band developed inspiration in the juxtaposition of travel and
           homecoming. After a stint crafting electronic landscapes during their
           time in Brazil, a return home to the familiar surroundings, guitars in
           hand, shifted the sound back into the alt rock scene.

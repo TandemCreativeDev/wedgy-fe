@@ -17,7 +17,7 @@ export default function Music() {
           }
         })}
       </div>
-      <h3 className="m-auto w-1/2 font-lexend text-white text-4xl text-center items-center tracking-widest mt-10 mb-10">
+      <h3 className="m-auto font-lexend text-white text-4xl text-center tracking-widest mt-10 mb-10">
         BUY THE ALBUM
       </h3>
       <div className="flex justify-center flex-wrap gap-24 w-11/12 m-auto mb-16">

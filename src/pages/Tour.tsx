@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import parseCSV from "../utils/parseCSV";
 
 // Define a type for your data structure
-type TourDate = {
+export type TourDateType = {
   venue: string;
   location: string;
   event_date: string;
@@ -9,7 +10,7 @@ type TourDate = {
 };
 
 export default function Tour() {
-  const [data, setData] = useState<TourDate[]>([]); // Use the type here
+  const [data, setData] = useState<TourDateType[]>([]); // Use the type here
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,19 +20,7 @@ export default function Tour() {
         );
         const csvText = await response.text();
 
-        // Parse CSV text
-        const rows = csvText.split("\n"); // Split by new lines to get each row
-        const headers = rows[0].split(","); // Get headers from the first row
-
-        const parsedData = rows.slice(1).map((row) => {
-          const values = row.split(",");
-          const tourDate: TourDate = headers.reduce((object, header, index) => {
-            const key = header.trim() as keyof TourDate; // Use keyof for type-safe property access
-            object[key] = values[index]?.trim() || "";
-            return object;
-          }, {} as TourDate); // Specify the initial object type
-          return tourDate;
-        });
+        const parsedData = parseCSV(csvText);
 
         console.log(parsedData);
         setData(parsedData);

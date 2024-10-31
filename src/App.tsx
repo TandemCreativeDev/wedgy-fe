@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Music from "./pages/Music";
 import Merch from "./pages/Merch";
+import Tour from "./pages/Tour";
 import Header from "./components/Header/Header";
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/music" element={<Music />} />
           <Route path="/merch" element={<Merch />} />
+          <Route path="/tour" element={<Tour />} />
         </Routes>
       </Router>
       <Footer />

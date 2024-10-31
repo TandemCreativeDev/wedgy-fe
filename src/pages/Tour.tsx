@@ -26,7 +26,6 @@ export default function Tour() {
 
         const parsedData = parseCSV(csvText);
 
-        // console.log(parsedData);
         setData(parsedData);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -42,10 +41,28 @@ export default function Tour() {
 
     data.forEach((date) => {
       if (dateInPast(date.event_date)) {
-        past.push(date); // Push to past if the date is in the past
+        past.push(date);
       } else {
-        future.push(date); // Push to future otherwise
+        future.push(date);
       }
+    });
+
+    past.sort((a, b) => {
+      const [dayA, monthA, yearA] = a.event_date.split("/").map(Number);
+      const [dayB, monthB, yearB] = b.event_date.split("/").map(Number);
+      return (
+        new Date(yearA, monthA - 1, dayA).getTime() -
+        new Date(yearB, monthB - 1, dayB).getTime()
+      );
+    });
+
+    future.sort((a, b) => {
+      const [dayA, monthA, yearA] = a.event_date.split("/").map(Number);
+      const [dayB, monthB, yearB] = b.event_date.split("/").map(Number);
+      return (
+        new Date(yearA, monthA - 1, dayA).getTime() -
+        new Date(yearB, monthB - 1, dayB).getTime()
+      );
     });
 
     setPastDates(past);

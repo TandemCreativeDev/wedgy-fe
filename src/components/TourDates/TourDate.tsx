@@ -1,4 +1,11 @@
-export default function TourDate({ tourDate }) {
+import { TourDateType } from "../../pages/Tour";
+
+// Define a new interface for props
+interface TourDateProps {
+  tourDate: TourDateType;
+}
+
+export default function TourDate({ tourDate }: TourDateProps) {
   return (
     <div
       key={tourDate.venue + tourDate.event_date} // Add a unique key
@@ -10,7 +17,7 @@ export default function TourDate({ tourDate }) {
         <li>{tourDate.event_date}</li>
         <li className="mt-6">
           <a
-            className="bg-white text-black text-center p-2 "
+            className="bg-white text-black text-center p-2 hover:bg-gray-300 "
             target="_blank"
             href={tourDate.ticket_link}
           >

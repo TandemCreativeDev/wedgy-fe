@@ -1,6 +1,16 @@
 import TourDate from "./TourDate";
 
-export default function TourDatesContainer({ tourDates, title }) {
+import { TourDateType } from "../../pages/Tour";
+
+interface TourDatesContainerProps {
+  tourDates: TourDateType[];
+  title: string;
+}
+
+export default function TourDatesContainer({
+  tourDates,
+  title,
+}: TourDatesContainerProps) {
   return (
     <>
       <div className="mb-24">

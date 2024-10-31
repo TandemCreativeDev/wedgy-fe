@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import parseCSV from "../utils/parseCSV";
-import isDateInPast from "../utils/checkDate";
 import dateInPast from "../utils/checkDate";
 import TourDatesContainer from "../components/TourDates/TourDatesContainer";
 
@@ -42,7 +41,11 @@ export default function Tour() {
     const future: TourDateType[] = [];
 
     data.forEach((date) => {
-      dateInPast(date.event_date) ? past.push(date) : future.push(date);
+      if (dateInPast(date.event_date)) {
+        past.push(date); // Push to past if the date is in the past
+      } else {
+        future.push(date); // Push to future otherwise
+      }
     });
 
     setPastDates(past);

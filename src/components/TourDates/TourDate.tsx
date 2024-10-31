@@ -8,7 +8,7 @@ export default function TourDate({ tourDate }: TourDateProps) {
   return (
     <div
       key={tourDate.venue + tourDate.event_date}
-      className="mb-14 m-auto w-1/2 flex flex-col justify-center items-center text-center"
+      className="mb-14 m-auto flex flex-col justify-center items-center text-center min-w-64"
     >
       <ul>
         <li>{tourDate.venue}</li>

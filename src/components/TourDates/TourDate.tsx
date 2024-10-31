@@ -1,6 +1,5 @@
 import { TourDateType } from "../../pages/Tour";
 
-// Define a new interface for props
 interface TourDateProps {
   tourDate: TourDateType;
 }
@@ -8,7 +7,7 @@ interface TourDateProps {
 export default function TourDate({ tourDate }: TourDateProps) {
   return (
     <div
-      key={tourDate.venue + tourDate.event_date} // Add a unique key
+      key={tourDate.venue + tourDate.event_date}
       className="mb-14 m-auto w-1/2 flex flex-col justify-center items-center text-center"
     >
       <ul>

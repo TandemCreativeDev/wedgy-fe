@@ -2,9 +2,10 @@ import { TourDateType } from "../../pages/Tour";
 
 interface TourDateProps {
   tourDate: TourDateType;
+  pastOrFuture: string;
 }
 
-export default function TourDate({ tourDate }: TourDateProps) {
+export default function TourDate({ tourDate, pastOrFuture }: TourDateProps) {
   return (
     <div
       key={tourDate.venue + tourDate.event_date}
@@ -14,14 +15,20 @@ export default function TourDate({ tourDate }: TourDateProps) {
         <li>{tourDate.venue}</li>
         <li>{tourDate.location}</li>
         <li>{tourDate.event_date}</li>
-        <li className="mt-6">
-          <a
-            className="bg-white text-black text-center p-2 hover:bg-gray-300 "
-            target="_blank"
-            href={tourDate.ticket_link}
-          >
-            Buy Tickets
-          </a>
+        <li className="mt-7">
+          {pastOrFuture === "upcoming events" ? (
+            <a
+              className="bg-white text-black text-center p-3 hover:bg-gray-300 "
+              target="_blank"
+              href={tourDate.ticket_link}
+            >
+              Buy Tickets
+            </a>
+          ) : (
+            <a className="bg-gray-800 text-gray-400 text-center p-3 cursor-not-allowed ">
+              Unavailable
+            </a>
+          )}
         </li>
       </ul>
     </div>

@@ -17,7 +17,7 @@ export default function TourDatesContainer({
         <h3 className="text-3xl text-center pb-10">{title}</h3>
         <div className="flex flex-wrap">
           {tourDates.map((tourDate) => {
-            return <TourDate tourDate={tourDate} />;
+            return <TourDate tourDate={tourDate} pastOrFuture={title} />;
           })}
         </div>
       </div>

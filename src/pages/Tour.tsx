@@ -61,8 +61,8 @@ export default function Tour() {
         TOUR
       </h2>
       <div className=" m-auto w-11/12 mt-10">
-        <TourDatesContainer tourDates={futureDates} title={"Upcoming Events"} />
-        <TourDatesContainer tourDates={pastDates} title={"Past Events"} />
+        <TourDatesContainer tourDates={futureDates} title={"upcoming events"} />
+        <TourDatesContainer tourDates={pastDates} title={"past events"} />
       </div>
     </>
   );

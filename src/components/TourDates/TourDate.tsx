@@ -1,4 +1,4 @@
-import { TourDateType } from "../../pages/Tour";
+import { TourDateType } from "../../utils/types/types";
 
 interface TourDateProps {
   tourDate: TourDateType;

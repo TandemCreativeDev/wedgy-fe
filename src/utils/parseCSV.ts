@@ -1,4 +1,4 @@
-import { TourDateType } from "../pages/Tour";
+import { TourDateType } from "../utils/types/types";
 
 const parseCSV = (csv: string) => {
   // Parse CSV text

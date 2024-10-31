@@ -1,6 +1,6 @@
 import TourDate from "./TourDate";
 
-import { TourDateType } from "../../pages/Tour";
+import { TourDateType } from "../../utils/types/types";
 
 interface TourDatesContainerProps {
   tourDates: TourDateType[];

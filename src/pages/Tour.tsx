@@ -2,14 +2,7 @@ import { useEffect, useState } from "react";
 import parseCSV from "../utils/parseCSV";
 import dateInPast from "../utils/checkDate";
 import TourDatesContainer from "../components/TourDates/TourDatesContainer";
-
-// Define a type for your data structure
-export type TourDateType = {
-  venue: string;
-  location: string;
-  event_date: string;
-  ticket_link: string;
-};
+import { TourDateType } from "../utils/types/types";
 
 export default function Tour() {
   const [data, setData] = useState<TourDateType[]>([]); // Use the type here

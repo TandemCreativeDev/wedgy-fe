@@ -14,8 +14,8 @@ export type TourDateType = {
 
 export default function Tour() {
   const [data, setData] = useState<TourDateType[]>([]); // Use the type here
-  const [futureDates, setFutureDates] = useState([]);
-  const [pastDates, setPastDates] = useState([]);
+  const [futureDates, setFutureDates] = useState<TourDateType[]>([]); // Use the type here
+  const [pastDates, setPastDates] = useState<TourDateType[]>([]); // Use the type here
 
   useEffect(() => {
     const fetchData = async () => {

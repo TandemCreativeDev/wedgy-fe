@@ -1,15 +1,24 @@
-import MobileNav from "./Navbar/Navbar";
+import * as icons from "react-icons/fa";
+import Icon from "./Icon";
+import socialLinks from "../../assets/data/socials.json"; // Adjust the path as needed
+
+type IconKey = keyof typeof icons;
 
 export default function Header() {
   return (
-    <header className="w-full flex justify-center md:block h-12">
+    <header className="w-full flex flex-col md:flex-row items-center md:items-start p-4 h-auto md:h-16">
       <a
         href="/"
-        className="md:mt-7 md:ml-7 block transform text-white text-5xl font-kalnia z-20 hover:text-gray-300"
+        className="text-white text-5xl font-kalnia hover:text-gray-300 text-center md:text-left mb-4 md:mb-0"
       >
-        <h1 className="hidden  md:block">Wedgy.</h1>
+        <h1>Wedgy.</h1>
       </a>
-      <MobileNav />
+      <div className="flex space-x-4 text-white group justify-center md:justify-end md:ml-auto">
+        {socialLinks.map(({ icon, link }, index) => {
+          const IconComponent = icons[icon as IconKey];
+          return <Icon key={index} icon={IconComponent} link={link} />;
+        })}
+      </div>
     </header>
   );
 }

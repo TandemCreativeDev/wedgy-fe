@@ -1,10 +1,14 @@
+import { useLocation } from "react-router-dom";
 import * as icons from "react-icons/fa";
 import Icon from "./Icon";
-import socialLinks from "../../assets/data/socials.json"; // Adjust the path as needed
+import socials from "../../assets/data/socials.json";
 
 type IconKey = keyof typeof icons;
 
 export default function Header() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   return (
     <header className="w-full flex flex-col md:flex-row items-center md:items-start p-4 h-auto md:h-16">
       <a
@@ -13,12 +17,24 @@ export default function Header() {
       >
         <h1>Wedgy.</h1>
       </a>
-      <div className="flex space-x-4 text-white group justify-center md:justify-end md:ml-auto">
-        {socialLinks.map(({ icon, link }, index) => {
+
+      {/* Desktop */}
+      <div className="hidden md:flex space-x-4 text-white group justify-center md:justify-end md:ml-auto">
+        {socials.map(({ icon, link }, index) => {
           const IconComponent = icons[icon as IconKey];
           return <Icon key={index} icon={IconComponent} link={link} />;
         })}
       </div>
+
+      {/* Mobile */}
+      {isHomePage && (
+        <div className="fixed bottom-12 left-0 right-0 flex md:hidden justify-center space-x-4 text-white">
+          {socials.map(({ icon, link }, index) => {
+            const IconComponent = icons[icon as IconKey];
+            return <Icon key={index} icon={IconComponent} link={link} />;
+          })}
+        </div>
+      )}
     </header>
   );
 }

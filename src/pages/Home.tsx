@@ -7,9 +7,8 @@ export default function Home() {
       <img
         className="-z-10 absolute inset-0 object-cover w-full h-full object-right"
         src={backgroundImg}
-        alt=""
+        alt="Photo of Wedgy performing live, black & white"
       />
-
       <HomeMenu />
     </main>
   );

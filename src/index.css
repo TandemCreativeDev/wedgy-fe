@@ -8,3 +8,7 @@
 body {
   @apply bg-[#121212] text-white font-lexend uppercase;
 }
+
+.responsive-text {
+  font-size: clamp(0.875rem, 2vw + 1rem, 1.25rem);
+}

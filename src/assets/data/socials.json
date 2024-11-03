@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "FaSoundcloud",
+    "link": "https://on.soundcloud.com/t7HhfKA18YEEcNCL8"
+  },
+  {
+    "icon": "FaSpotify",
+    "link": "https://open.spotify.com/artist/7xjHn8ys29MbBk4tYQRRJx"
+  },
+  {
+    "icon": "FaYoutube",
+    "link": "https://youtube.com/@WedgeFundMusic?si=qmezRGkesmVusyDE&sub_confirmation=1"
+  },
+  {
+    "icon": "FaInstagram",
+    "link": "https://www.instagram.com/wedgymusic/"
+  },
+  {
+    "icon": "FaApple",
+    "link": "https://www.canva.com/design/DAGFfVE-Yec/w7gcJdYKT2ql0XYfHapifA/view?utm_content=DAGFfVE-Yec&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+  },
+  {
+    "icon": "FaTiktok",
+    "link": "https://www.tiktok.com"
+  }
+]

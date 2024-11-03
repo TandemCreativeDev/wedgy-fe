@@ -1,15 +1,40 @@
-import MobileNav from "./Navbar/Navbar";
+import { useLocation } from "react-router-dom";
+import * as icons from "react-icons/fa";
+import Icon from "./Icon";
+import socials from "../../assets/data/socials.json";
+
+type IconKey = keyof typeof icons;
 
 export default function Header() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   return (
-    <header className="w-full flex justify-center md:block h-12">
+    <header className="w-full flex flex-col md:flex-row items-center md:items-start p-4 h-16">
       <a
         href="/"
-        className="md:mt-7 md:ml-7 block transform text-white text-5xl font-kalnia z-20 hover:text-gray-300"
+        className="text-white text-5xl font-kalnia hover:text-gray-300 text-center md:text-left mb-4 md:mb-0"
       >
-        <h1 className="hidden  md:block">Wedgy.</h1>
+        <h1>Wedgy.</h1>
       </a>
-      <MobileNav />
+
+      {/* Desktop */}
+      <div className="hidden md:flex space-x-4 text-white group justify-center md:justify-end md:ml-auto">
+        {socials.map(({ icon, link }, index) => {
+          const IconComponent = icons[icon as IconKey];
+          return <Icon key={index} icon={IconComponent} link={link} />;
+        })}
+      </div>
+
+      {/* Mobile */}
+      {isHomePage && (
+        <div className="fixed bottom-12 left-0 right-0 flex md:hidden justify-center space-x-4 text-white">
+          {socials.map(({ icon, link }, index) => {
+            const IconComponent = icons[icon as IconKey];
+            return <Icon key={index} icon={IconComponent} link={link} />;
+          })}
+        </div>
+      )}
     </header>
   );
 }

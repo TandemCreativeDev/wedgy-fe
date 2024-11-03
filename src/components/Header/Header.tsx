@@ -10,7 +10,7 @@ export default function Header() {
   const isHomePage = location.pathname === "/";
 
   return (
-    <header className="w-full flex flex-col md:flex-row items-center md:items-start p-4 h-auto md:h-16">
+    <header className="w-full flex flex-col md:flex-row items-center md:items-start p-4 h-16">
       <a
         href="/"
         className="text-white text-5xl font-kalnia hover:text-gray-300 text-center md:text-left mb-4 md:mb-0"

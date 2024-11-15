@@ -17,7 +17,7 @@ export default function HomeMenu() {
           >
             <a
               href={link.linkAddress}
-              className="relative cursor-pointer underline underline-offset-8 md:no-underline decoration-2 tracking-widest hover:drop-shadow-lg transition duration-200 before:content-[''] before:absolute before:inset-0 before:border before:border-white before:scale-x-0 before:origin-left before:transition-transform before:duration-300 hover:before:scale-x-100"
+              className="relative cursor-pointer decoration-2 tracking-widest hover:drop-shadow-lg transition duration-200 before:content-[''] before:absolute before:inset-0 before:border before:border-white before:scale-x-0 before:origin-left before:transition-transform before:duration-300 hover:before:scale-x-100"
             >
               {link.linkText}
             </a>

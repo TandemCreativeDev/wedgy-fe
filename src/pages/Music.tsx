@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import BandcampPlayer from "../components/BandcampPlayer/BandcampPlayer";
 import bandCampData from "../assets/data/bandcamp.json";
 
 export default function Music() {
+  useEffect(() => {
+    document.title = "Music | Wedgy";
+  }, []);
   return (
-    <main className="min-h-[calc(100vh-9.25rem)]">
+    <main id="main-content" className="min-h-[calc(100vh-9.25rem)]">
       <h2 className=" font-lexend text-white text-5xl md:text-7xl text-center tracking-widest">
         MUSIC
       </h2>

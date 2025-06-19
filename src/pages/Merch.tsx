@@ -1,6 +1,14 @@
+import { useEffect } from "react";
+
 export default function Merch() {
+  useEffect(() => {
+    document.title = "Merch | Wedgy";
+  }, []);
   return (
-    <div className="w-full text-center text-3xl flex gap-1 flex-col min-h-[calc(100vh-9.25rem)]">
+    <main
+      id="main-content"
+      className="w-full text-center text-3xl flex gap-1 flex-col min-h-[calc(100vh-9.25rem)]"
+    >
       <h2>coming soon</h2>
       <h2>coming soon</h2>
       <h2>coming soon</h2>
@@ -15,6 +23,6 @@ export default function Merch() {
       <h2>coming soon</h2>
       <h2>coming soon</h2>
       <h2>coming soon</h2>
-    </div>
+    </main>
   );
 }

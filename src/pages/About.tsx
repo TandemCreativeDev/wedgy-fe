@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import aboutImg from "../assets/images/about-img.jpg";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About | Wedgy";
+  }, []);
   return (
-    <main className="min-h-[calc(100vh-9.25rem)]">
+    <main id="main-content" className="min-h-[calc(100vh-9.25rem)]">
       <h2 className=" font-lexend text-white text-5xl md:text-7xl text-center tracking-widest">
         about
       </h2>
@@ -12,7 +16,7 @@ export default function About() {
       <img
         className="w-11/12 m-auto mt-10 md:max-w-3xl"
         src={aboutImg}
-        alt=""
+        alt="Members of Wedgy posing together"
       />
       <div className="flex flex-col gap-7 mt-10 max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-5xl  m-auto mb-10 md:text-xl md:leading-">
         <p>

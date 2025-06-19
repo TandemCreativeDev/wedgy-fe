@@ -1,26 +1,32 @@
 [
   {
     "icon": "FaSoundcloud",
-    "link": "https://on.soundcloud.com/t7HhfKA18YEEcNCL8"
+    "link": "https://on.soundcloud.com/t7HhfKA18YEEcNCL8",
+    "name": "SoundCloud"
   },
   {
     "icon": "FaSpotify",
-    "link": "https://open.spotify.com/artist/7xjHn8ys29MbBk4tYQRRJx"
+    "link": "https://open.spotify.com/artist/7xjHn8ys29MbBk4tYQRRJx",
+    "name": "Spotify"
   },
   {
     "icon": "FaYoutube",
-    "link": "https://youtube.com/@WedgeFundMusic?si=qmezRGkesmVusyDE&sub_confirmation=1"
+    "link": "https://youtube.com/@WedgeFundMusic?si=qmezRGkesmVusyDE&sub_confirmation=1",
+    "name": "YouTube"
   },
   {
     "icon": "FaInstagram",
-    "link": "https://www.instagram.com/wedgymusic/"
+    "link": "https://www.instagram.com/wedgymusic/",
+    "name": "Instagram"
   },
   {
     "icon": "FaApple",
-    "link": "https://www.canva.com/design/DAGFfVE-Yec/w7gcJdYKT2ql0XYfHapifA/view?utm_content=DAGFfVE-Yec&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+    "link": "https://www.canva.com/design/DAGFfVE-Yec/w7gcJdYKT2ql0XYfHapifA/view?utm_content=DAGFfVE-Yec&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    "name": "Apple Music"
   },
   {
     "icon": "FaTiktok",
-    "link": "https://www.tiktok.com"
+    "link": "https://www.tiktok.com",
+    "name": "TikTok"
   }
 ]

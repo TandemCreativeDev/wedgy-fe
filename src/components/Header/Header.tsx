@@ -19,19 +19,29 @@ export default function Header() {
       </a>
 
       {/* Desktop */}
-      <div className="hidden md:flex space-x-4 text-white group justify-center md:justify-end md:ml-auto">
-        {socials.map(({ icon, link }, index) => {
+      <div
+        className="hidden md:flex space-x-4 text-white group justify-center md:justify-end md:ml-auto"
+        aria-label="Social media links"
+      >
+        {socials.map(({ icon, link, name }, index) => {
           const IconComponent = icons[icon as IconKey];
-          return <Icon key={index} icon={IconComponent} link={link} />;
+          return (
+            <Icon key={index} icon={IconComponent} link={link} name={name} />
+          );
         })}
       </div>
 
       {/* Mobile */}
       {isHomePage && (
-        <div className="fixed bottom-12 left-0 right-0 flex md:hidden justify-center space-x-4 text-white group">
-          {socials.map(({ icon, link }, index) => {
+        <div
+          className="fixed bottom-12 left-0 right-0 flex md:hidden justify-center space-x-4 text-white group"
+          aria-label="Social media links"
+        >
+          {socials.map(({ icon, link, name }, index) => {
             const IconComponent = icons[icon as IconKey];
-            return <Icon key={index} icon={IconComponent} link={link} />;
+            return (
+              <Icon key={index} icon={IconComponent} link={link} name={name} />
+            );
           })}
         </div>
       )}

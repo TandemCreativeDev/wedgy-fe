@@ -18,16 +18,17 @@ export default function TourDate({ tourDate, pastOrFuture }: TourDateProps) {
         <li className="mt-7">
           {pastOrFuture === "upcoming events" ? (
             <a
-              className="bg-white text-black text-center p-3 hover:bg-gray-300 "
+              className="bg-white text-black text-center p-3 hover:bg-gray-300"
               target="_blank"
+              rel="noopener noreferrer"
               href={tourDate.ticket_link}
             >
               Buy Tickets
             </a>
           ) : (
-            <a className="bg-gray-800 text-gray-400 text-center p-3 cursor-not-allowed ">
+            <span className="bg-gray-800 text-gray-400 text-center p-3">
               Unavailable
-            </a>
+            </span>
           )}
         </li>
       </ul>

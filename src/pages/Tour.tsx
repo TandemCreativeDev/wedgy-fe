@@ -71,9 +71,9 @@ export default function Tour() {
 
   return (
     <main id="main-content" className="min-h-[calc(100vh-9.25rem)]">
-      <h2 className=" font-lexend text-white text-5xl md:text-7xl text-center tracking-widest">
+      <h1 className=" font-lexend text-white text-5xl md:text-7xl text-center tracking-widest">
         TOUR
-      </h2>
+      </h1>
       <div className=" m-auto w-11/12 mt-10">
         <TourDatesContainer tourDates={futureDates} title={"upcoming events"} />
         <TourDatesContainer tourDates={pastDates} title={"past events"} />

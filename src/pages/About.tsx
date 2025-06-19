@@ -7,16 +7,16 @@ export default function About() {
   }, []);
   return (
     <main id="main-content" className="min-h-[calc(100vh-9.25rem)]">
-      <h2 className=" font-lexend text-white text-5xl md:text-7xl text-center tracking-widest">
+      <h1 className=" font-lexend text-white text-5xl md:text-7xl text-center tracking-widest">
         about
-      </h2>
-      <h3 className="text-center text-xl md:text-3xl mt-10">
+      </h1>
+      <h2 className="text-center text-xl md:text-3xl mt-10">
         Wedgy are an Alt-Rock band, based in Leeds.
-      </h3>
+      </h2>
       <img
         className="w-11/12 m-auto mt-10 md:max-w-3xl"
         src={aboutImg}
-        alt="Members of Wedgy posing together"
+        alt="Wedgy performing outdoors"
       />
       <div className="flex flex-col gap-7 mt-10 max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-5xl  m-auto mb-10 md:text-xl md:leading-">
         <p>

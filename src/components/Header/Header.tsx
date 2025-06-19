@@ -15,7 +15,7 @@ export default function Header() {
         href="/"
         className="text-white text-5xl font-kalnia hover:text-gray-300 text-center md:text-left mb-4 md:mb-0"
       >
-        <h1>Wedgy.</h1>
+        <span>Wedgy.</span>
       </a>
 
       {/* Desktop */}

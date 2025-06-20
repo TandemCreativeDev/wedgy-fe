@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const menuLinks = [
     { linkAddress: "/", linkText: "HOME" },
@@ -13,7 +15,7 @@ export default function MobileNav() {
   ];
 
   return (
-    <nav>
+    <nav aria-label="Main">
       <button
         onClick={() => setIsOpen(true)}
         className="md:hidden z-40 fixed top-4 right-4 text-white focus:outline-none"
@@ -66,6 +68,11 @@ export default function MobileNav() {
                     href={link.linkAddress}
                     onClick={() => setIsOpen(false)}
                     className="hover:text-gray-400 cursor-pointer"
+                    aria-current={
+                      location.pathname === link.linkAddress
+                        ? "page"
+                        : undefined
+                    }
                   >
                     {link.linkText}
                   </a>
